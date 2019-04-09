@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jua|Ubuntu"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Compiled and minified Material CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Job App</title>
+
+    <style>
+      nav {
+        background: #ffffff;
+        color: #1a237e;
+      }
+
+      .nav-wrapper .brand-logo {
+        color: #1a237e;
+      }
+
+      nav li a {
+        color: #1a237e;
+      }
+
+      nav li a:hover {
+        background: #1a237e;
+        color: #ffffff;
+      }
+
+      nav .btn {
+        border: 1px solid #1a237e;
+        border-radius: 5px;
+        box-shadow: 0;
+      }
+
+      nav .btn:hover {
+        background: #1a237e;
+        color: #ffffff;
+      }
+
+      .main-btn {
+        background: #1a237e;
+        color: #ffffff;
+        border: 0px;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .invite-text {
+        padding-top: 20%;
+      }
+
+      .invite-text p {
+        font-size: 1.2rem;
+        font-family: Ubuntu;
+      }
+
+      .invite-text h1 {
+        font-size: 3rem;
+        font-family: Jua;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- header section -->
+    <header>
+      <!-- navigagtion here -->
+      <nav class="z-depth-0">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Register</a></li>
+            <li><a href="#" class="btn">Become Agent</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Register</a></li>
+        <li><a href="#" class="btn">Become Agent</a></li>
+      </ul>
+
+      <!-- Subscribe invite here -->
+      <div class="row">
+        <div class="col l7 m7 s12">
+          <button class="main-btn right z-depth-4">
+            <i class="fa fa-code" aria-hidden="true"></i>
+          </button>
+          <!-- main text here -->
+          <div class="invite-text">
+            <p class="indigo-text darken-4">The remote life</p>
+            <h1>Subscribe to receive remote developer jobs</h1>
+            <p class="grey-text lighten-2">
+              Built for Africa and for Africa. Let us get you the job that you
+              are perfect for.
+            </p>
+          </div>
+          <!-- newsletter form here -->
+          <form action="#">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>File</span>
+                <input type="file" />
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col l5 m5 s12">
+          <img
+            src="img\geeky.JPG"
+            alt="Geeky"
+            class="responsive-img materialBoxed"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+    <!-- Pay an agent section -->
+    
+    </main>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified Material JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
