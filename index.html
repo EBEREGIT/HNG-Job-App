@@ -89,11 +89,26 @@
         font-size: 3rem;
         font-family: Jua;
       }
+
+      .payAgent {
+        height: 300px;
+        font-family: Ubuntu;
+      }
+
+      .payAgent h1{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .payAgent p{
+        font-size: 1.1rem;
+      }
     </style>
   </head>
-  <body class="container">
+  <body>
     <!-- header section -->
-    <header>
+    <header class="container">
       <!-- navigagtion here -->
       <nav class="z-depth-0">
         <div class="nav-wrapper">
@@ -152,9 +167,16 @@
     </header>
 
     <!-- main section -->
-    <main>
+    <main class="row">
     <!-- Pay an agent section -->
-    
+        <div class="col l12 m12 s12 grey lighten-2 center payAgent valign-wrapper">
+            <div class="container">
+               <h1 class="indigo-text darken-4">Pay an agent to apply</h1>
+               <p>Secure the job faaster and easier. Let an agent help you apply</p>
+                <p>get more probability of success</p>
+               <button class="btn indigo darken-4 white-text">Contact Agent</button>
+            </div>
+        </div>
     </main>
 
     <!-- jQuery -->
