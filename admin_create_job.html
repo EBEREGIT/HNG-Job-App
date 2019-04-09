@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Jua|Ubuntu"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Job App</title>
+
+    <style>
+      /* logo column */
+      .logo-column {
+        background-color: #11144c;
+        text-align: center;
+        font-family: Ubuntu;
+        padding-top: 10%;
+        color: #ffffff;
+        height: auto;
+      }
+
+      .logo-column h3 {
+        font-family: Jua;
+      }
+
+      .logo-column li {
+        margin-bottom: 20px;
+        text-decoration: none;
+        list-style-type: none;
+      }
+
+      .logo-column li a {
+        color: #ffffff;
+      }
+
+      .logo-column .logo-links {
+        padding-top: 30%;
+        margin-top: 30%;
+      }
+
+      .logo-column .btn-job {
+        color: white;
+        background-color: #858af4;
+        border-radius: 25px;
+
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        text-align: center;
+      }
+
+      /* job-form-column */
+      .job-form-column {
+        justify-content: center;
+        align-content: center;
+      }
+
+      .job-form-column h2 {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 10px;
+        font-family: Jua;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: normal;
+        color: #11144c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <!-- logo column -->
+      <div class="col col-lg-2 col-md-2 col-sm2 col-xs-2 logo-column container">
+        <h3>Logo</h3>
+        <ul class="logo-links">
+          <li><a href="" class="btn btn-job">Post New Job</a></li>
+          <li><a href="">Manage Job</a></li>
+          <li><a href="">Subscribers</a></li>
+        </ul>
+      </div>
+
+      <!-- job form colum -->
+      <div class="l8 m8 s8 job-form-column container">
+        <h2>Create Job Post</h2>
+        <form>
+          <div class="row container">
+            <div class="col col-lg-12 form-group">
+              <label for="">Advert header</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Advert header"
+              />
+            </div>
+            <div class="col col-lg-6 form-group">
+              <label for="">Comapny Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Comapny Name"
+              />
+            </div>
+            <div class="col col-lg-6 form-group">
+              <label for="">Job title</label>
+              <input type="text" class="form-control" placeholder="Job title" />
+            </div>
+            <div class="col col-lg-12 form-group">
+              <label for="">Job Post Link</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Job Post Link"
+              />
+            </div>
+            <div class="col col-lg-12 form-group">
+              <label for="">Description</label>
+              <textarea
+                class="form-control"
+                name=""
+                id=""
+                placeholder="Description"
+              ></textarea>
+            </div>
+            <div class="col col-lg-6 form-group">
+              <label for="">Job Pay Range</label>
+              <input type="text" class="form-control" placeholder="minimum" />
+            </div>
+            <div class="col col-lg-6 form-group">
+              <label for="" style="color: #ffffff">Job Pay Range</label>
+              <input type="text" class="form-control" placeholder="maximum" />
+            </div>
+            <div class="col col-lg-12 form-group">
+              <label for="">Employer Email</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Compiled and minified Material JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom js -->
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+    </script>
+  </body>
+</html>
