@@ -28,14 +28,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
-    <!-- Compiled and minified Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
     <title>Job App</title>
 
     <style>
@@ -57,7 +49,7 @@
         color: #ffffff;
       }
 
-      nav .btn {
+      nav .btn-agent {
         border: 1px solid #1a237e;
         border-radius: 5px;
         box-shadow: 0;
@@ -76,8 +68,12 @@
         border-radius: 5px;
       }
 
+      .invite {
+        padding-right: 10px;
+      }
+
       .invite-text {
-        padding-top: 20%;
+        padding-top: 10%;
       }
 
       .invite-text p {
@@ -90,19 +86,97 @@
         font-family: Jua;
       }
 
+      .res-image{
+        /* margin-top: 10%;
+        padding-left: 10%; */
+      }
+
+      input:not([type]),
+      input[type="text"]:not(.browser-default) {
+        width: 65%;
+        border: none;
+      }
+
+      .newsletter {
+        border: 1px solid #eceff1;
+        border-radius: 5px;
+      }
+
+      .btn-newsletter {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
       .payAgent {
-        height: 300px;
+        height: 350px;
         font-family: Ubuntu;
       }
 
-      .payAgent h1{
+      .payAgent h1 {
+        padding-top: 50px;
         padding-bottom: 20px;
         margin-bottom: 20px;
         font-weight: bold;
+        font-size: 3rem;
       }
 
-      .payAgent p{
+      .payAgent p {
         font-size: 1.1rem;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+
+      .jobPostings h2 {
+        font-family: Ubuntu;
+        font-weight: bolder;
+      }
+
+      .job-list {
+        border: 1px solid #eceff1;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      .job-list .position {
+        padding-left: 20px;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+
+      .job-list .details {
+        padding-left: 20px;
+        margin-left: 20px;
+      }
+
+      .moreList a {
+        margin-left: 40%;
+        margin-right: 40%;
+        color: #1a237e;
+        font-weight: bold;
+        margin-top: 5%;
+        font-size: 1.2rem;
+      }
+
+      footer {
+        font-family: Ubuntu;
+      }
+
+      footer h5 {
+        font-family: Jua;
+        font-size: 1.5rem;
+      }
+
+      footer a {
+        font-size: 1rem;
+      }
+
+      footer .social-media a {
+        padding-right: 10px;
+        color: #ffffff;
+        font-size: 1.5rem;
       }
     </style>
   </head>
@@ -118,66 +192,261 @@
           >
           <ul class="right hide-on-med-and-down">
             <li><a href="#">Register</a></li>
-            <li><a href="#" class="btn">Become Agent</a></li>
+            <li>
+              <a href="#" class="btn btn-agent indigo darken-4">Become Agent</a>
+            </li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
         <li><a href="#">Register</a></li>
-        <li><a href="#" class="btn">Become Agent</a></li>
+        <li><a href="#" class="btn btn-agent">Become Agent</a></li>
       </ul>
 
       <!-- Subscribe invite here -->
       <div class="row">
-        <div class="col l7 m7 s12">
+        <div class="col l6 m6 s12">
           <button class="main-btn right z-depth-4">
             <i class="fa fa-code" aria-hidden="true"></i>
           </button>
           <!-- main text here -->
-          <div class="invite-text">
-            <p class="indigo-text darken-4">The remote life</p>
-            <h1>Subscribe to receive remote developer jobs</h1>
-            <p class="grey-text lighten-2">
-              Built for Africa and for Africa. Let us get you the job that you
-              are perfect for.
-            </p>
-          </div>
-          <!-- newsletter form here -->
-          <form action="#">
-            <div class="file-field input-field">
-              <div class="btn">
-                <span>File</span>
-                <input type="file" />
-              </div>
-              <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" />
-              </div>
+          <div class="row invite">
+            <div class="invite-text">
+              <p class="indigo-text darken-4">The remote life</p>
+              <h1>Subscribe to receive remote developer jobs</h1>
+              <p class="grey-text lighten-2">
+                Built for Africa and for Africa. Let us get you the job that you
+                are perfect for.
+              </p>
             </div>
-          </form>
+            <!-- newsletter form here -->
+
+            <form class="col s12 newsletter z-depth-4">
+              <input type="text" placeholder="Enter email address" />
+              <button class="btn btn-newsletter indigo darken-4">
+                Get Started
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="col l5 m5 s12">
+        <div class="col l6 m6 s12">
           <img
             src="img\geeky.JPG"
             alt="Geeky"
-            class="responsive-img materialBoxed"
+            class="res-image"
           />
         </div>
       </div>
     </header>
 
     <!-- main section -->
-    <main class="row">
-    <!-- Pay an agent section -->
-        <div class="col l12 m12 s12 grey lighten-2 center payAgent valign-wrapper">
-            <div class="container">
-               <h1 class="indigo-text darken-4">Pay an agent to apply</h1>
-               <p>Secure the job faaster and easier. Let an agent help you apply</p>
-                <p>get more probability of success</p>
-               <button class="btn indigo darken-4 white-text">Contact Agent</button>
-            </div>
+    <main>
+      <!-- Pay an agent section -->
+      <div class="row">
+        <div class="col l12 m12 s12 grey lighten-3 center payAgent">
+          <div class="container">
+            <h1 class="indigo-text darken-4">Pay an agent to apply</h1>
+            <p>
+              Secure the job faaster and easier. Let an agent help you apply
+              <br />get more probability of success
+            </p>
+            <button class="btn-large indigo darken-4 white-text">
+              Contact Agent
+            </button>
+          </div>
         </div>
+      </div>
+
+      <!-- job posting section -->
+      <div class="row">
+        <div class="container jobPostings">
+          <h2 class="center">Job Postings</h2>
+          <!-- job filter section -->
+          <div class="col l1 m1 s12">
+            <h5>Filter:</h5>
+          </div>
+          <div class="col l5 m5 s12">
+            <select class="browser-default">
+              <option value="" disabled selected>Select Job Role</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- job listing section -->
+      <div class="row">
+        <div class="container">
+          <!-- job column 1 -->
+          <div class="col l6">
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- job column 2 -->
+          <div class="col l6">
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+
+            <div class="col l12 m12 s1 job-list z-depth-3 center">
+              <p class="valign-wrapper">
+                <span class="company"
+                  ><i class="material-icons">widgets</i>MicroSoft</span
+                >
+                <span class="position">Senior Backend Developer</span>
+                <span class="details"
+                  >View <i class="material-icons">arrow_forward</i></span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- load more -->
+          <div class="col l12 m12 s12 moreList">
+            <a href="#" class="valign-wrapper"
+              >Load more listings
+              <i class="material-icons prefix">keyboard_arrow_down</i>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- footer section -->
+    <footer class="page-footer  indigo darken-3">
+      <div class="container">
+        <!-- footer one -->
+        <div class="row">
+          <div class="col offset-l2 l2 s12">
+            <h5 class="white-text">Company</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">About Us</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Post a job</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col offset-l1 l3 quickLink">
+            <h5 class="white-text">Quick Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Register</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!">Apply for job</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  >Become an agent</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col l3 s12 social-media">
+            <h5 class="white-text">Follow Us</h5>
+            <p>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer two -->
+      <div class="footer-copyright  indigo darken-4 center">
+        <div class="container">
+          Copyright 2019 Text. All rights reserved
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script
