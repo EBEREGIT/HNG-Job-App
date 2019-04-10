@@ -34,6 +34,15 @@
             overflow: hidden;
         }
       /* logo column */
+      nav {
+        background-color: #11144c;
+        color: #ffffff;
+      }
+
+      nav button {
+        color: #ffffff;
+      }
+
       .logo-column {
         background-color: #11144c;
         font-family: Ubuntu;
@@ -123,8 +132,33 @@
   </head>
   <body>
       <div class="main-wrapper">
+            <!-- logo column -->
+              <!-- for mobile devices -->
+              <nav class="navbar navbar-expand-lg navbar-dark d-sm-none">
+                  <a class="navbar-brand" href="#">Logo</a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="navbar-collapse collapse show" id="navbarColor01" style="">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Post New Job<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Manage Job</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Subscribers</a>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </nav>
+
             <div class="row">
-              <!-- logo column -->
+              <!-- for other screens -->
               <div class="col col-lg-2 col-md-3 col-sm-4 col-xs-2 d-none d-sm-block logo-column">
                 <h3>Logo</h3>
                 <ul class="logo-links">
